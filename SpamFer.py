@@ -44,7 +44,7 @@ def bomb():
 
 os.system('clear')
 try:
-	file1 = open('Banner.txt', 'r')
+	file1 = open('Banner.tx', 'r')
 	print(' ')
 	print bcolors.OKGREEN + file1.read() + bcolors.ENDC
 	file1.close()
