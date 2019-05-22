@@ -53,18 +53,18 @@ except IOError:
 
 #Input
 print(bcolors.WARNING + '''
-Choose a Mail Service:
+Servicios:
 1) Gmail
 2) Yahoo
 3) Hotmail/Outlook
 ''' + bcolors.ENDC + '--------------------------------------------------------------')
 try:
-	server = raw_input(bcolors.OKGREEN + 'Mail Server: ' + bcolors.ENDC)
-	user = raw_input(bcolors.OKGREEN + 'Your Email: ' + bcolors.ENDC)
-	pwd = getpass.getpass(bcolors.OKGREEN + 'Password: ' + bcolors.ENDC)
-	to = raw_input(bcolors.OKGREEN + 'To: ' + bcolors.ENDC)
-	subject = raw_input(bcolors.OKGREEN + 'Subject (Optional): ' + bcolors.ENDC)
-	body = raw_input(bcolors.OKGREEN + 'Message: ' + bcolors.ENDC)
+	server = raw_input(bcolors.OKRED + 'Mail Server: ' + bcolors.ENDC)
+	user = raw_input(bcolors.OKRED + 'Your Email: ' + bcolors.ENDC)
+	pwd = getpass.getpass(bcolors.OKRED + 'Password: ' + bcolors.ENDC)
+	to = raw_input(bcolors.OKRED + 'To: ' + bcolors.ENDC)
+	subject = raw_input(bcolors.OKRED + 'Subject (Optional): ' + bcolors.ENDC)
+	body = raw_input(bcolors.OKRED + 'Message: ' + bcolors.ENDC)
 	nomes = input(bcolors.OKGREEN + 'Number of Emails to send: ' + bcolors.ENDC)
 	no = 0
 	message = 'From: ' + user + '\nSubject: ' + subject + '\n' + body
